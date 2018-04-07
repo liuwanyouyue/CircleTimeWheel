@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CircleTimeWheel</string>
+    <string name="s_public_full_month_January">January</string>
+    <string name="s_public_full_month_February">February</string>
+    <string name="s_public_full_month_March">March</string>
+    <string name="s_public_full_month_April">April</string>
+    <string name="s_public_full_month_May">May</string>
+    <string name="s_public_full_month_June">June</string>
+    <string name="s_public_full_month_July">July</string>
+    <string name="s_public_full_month_August">August</string>
+    <string name="s_public_full_month_September">September</string>
+    <string name="s_public_full_month_October">October</string>
+    <string name="s_public_full_month_November">November</string>
+    <string name="s_public_full_month_December">December</string>
+    <string name="s_day_capital">DAY</string>
+    <string name="s_month_capital">MONTH</string>
+    <string name="s_week_capital">WEEK</string>
+    <string name="s_yellow">Yellow</string>
+    <string name="s_green">Green</string>
+    <string name="s_blue">Blue</string>
+    <string name="s_red">Red</string>
+</resources>

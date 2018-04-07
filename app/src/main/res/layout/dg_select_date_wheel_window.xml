@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_select_date_all"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWheelWindow"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_activity_detail_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_activity_detail_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/s_day_capital"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_activity_detail_circle_left"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:src="@mipmap/activity_detail_date_yellow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_activity_detail_week"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_activity_detail_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/s_week_capital"
+                android:textColor="@color/colorYellow"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_activity_detail_circle"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:src="@mipmap/activity_detail_date_yellow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_activity_detail_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_activity_detail_month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/s_month_capital"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_activity_detail_circle_right"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:src="@mipmap/activity_detail_date_yellow" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.lwyy.wheel.view.CircleWheelView
+            android:id="@+id/pwv_activity_detail_show_left"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_weight="3"
+            app:wheel_item_text_color="@android:color/darker_gray"
+            app:wheel_item_text_size="20dp" />
+
+        <com.lwyy.wheel.view.CircleWheelView
+            android:id="@+id/pwv_activity_detail_show"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_weight="4"
+            app:wheel_item_text_color="@android:color/darker_gray"
+            app:wheel_item_text_size="20dp" />
+
+        <com.lwyy.wheel.view.CircleWheelView
+            android:id="@+id/pwv_activity_detail_show_right"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_weight="3"
+            app:wheel_item_text_color="@android:color/darker_gray"
+            app:wheel_item_text_size="20dp" />
+    </LinearLayout>
+
+</LinearLayout>
